@@ -1,0 +1,148 @@
+.logo-image{
+    width: 50px;
+    height: auto;
+}
+
+/* Style for the subscription window */
+.subscription-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 800px; /* Limit maximum width */
+    height: auto; /* Adjust height automatically */
+    /* background: rgba(255, 255, 255, 0.8); Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+@media (max-width: 768px) {
+    .subscription-window {
+        padding: 20px; /* Adjust padding for smaller screens */
+        backdrop-filter: blur(10px);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.ad-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.ad-btn:hover {
+    background-color: #f0f0f0;
+} 
+
+/* Modal Window Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    max-width: 1500px;
+    height: 610px;
+    position: relative; /* Add relative positioning */
+    background-image: url(./images/spesial-offer.jpg);
+    background-size: cover;
+  }
+  
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 0;
+    right: 0; /* Move the close button to the right */
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 10px;
+    display: none; 
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*Cart*/
+#shopping-cart {
+    position: fixed;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    top: 0;
+    right: 0;
+    width: 100%; /* Змініть ширину вікна на 100% на малих екранах (телефони) */
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Додайте прокрутку, якщо контент великий */
+
+    /* Додайте стилі для малих екранів */
+    @media (min-width: 1300px) {
+        width: 30%; /* Змініть ширину вікна на 25% на великих екранах (комп'ютери) */
+    }
+}
+
+
+    #close-cart{
+       position: absolute; 
+       top: 10px; 
+       right: 10px; 
+       font-size: 24px; 
+       cursor: pointer;
+    }
+
+    .quantity-input{
+        width: ch;
+    }
+
+  /*-------------------------------------*/
+  /* .image-container {
+    position: relative;
+    width: 300px; /* Змініть ширину та висоту відповідно до розмірів ваших картинок 
+    height: 300px;
+}
+
+.bottom-image,
+.top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; /* Плавне перехідне зникає 
+}
+
+.top-image {
+    z-index: 2;
+    opacity: 1;
+} */
+
